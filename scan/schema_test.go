@@ -196,7 +196,7 @@ func TestSchemaParser(t *testing.T) {
 
 	definitions := make(map[string]spec.Schema)
 	sp := newSchemaParser(classificationProg)
-	pn := "github.com/go-swagger/go-swagger/fixtures/goparsing/classification/models"
+	pn := "github.com/syndbg/go-swagger/fixtures/goparsing/classification/models"
 	// pnr := "../fixtures/goparsing/classification/models"
 	pkg := classificationProg.Package(pn)
 	if assert.NotNil(t, pkg) {

@@ -17,7 +17,7 @@ import (
 
 	strfmt "github.com/go-openapi/strfmt"
 
-	models "github.com/go-swagger/go-swagger/examples/contributed-templates/stratoscale/models"
+	models "github.com/syndbg/go-swagger/examples/contributed-templates/stratoscale/models"
 )
 
 // NewOrderCreateParams creates a new OrderCreateParams object

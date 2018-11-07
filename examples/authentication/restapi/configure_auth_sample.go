@@ -10,10 +10,10 @@ import (
 	runtime "github.com/go-openapi/runtime"
 	middleware "github.com/go-openapi/runtime/middleware"
 
-	"github.com/go-swagger/go-swagger/examples/authentication/restapi/operations"
-	"github.com/go-swagger/go-swagger/examples/authentication/restapi/operations/customers"
+	"github.com/syndbg/go-swagger/examples/authentication/restapi/operations"
+	"github.com/syndbg/go-swagger/examples/authentication/restapi/operations/customers"
 
-	models "github.com/go-swagger/go-swagger/examples/authentication/models"
+	models "github.com/syndbg/go-swagger/examples/authentication/models"
 )
 
 //go:generate swagger generate server --target .. --name AuthSample --spec ../swagger.yml --principal models.Principal

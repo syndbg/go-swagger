@@ -22,7 +22,7 @@ This dependency used to be necessary up to release 0.14:
 
 These packages may of course be *vendored* with your own source.
 
-Originally from issue [#1085](https://github.com/go-swagger/go-swagger/issues/1085).
+Originally from issue [#1085](https://github.com/syndbg/go-swagger/issues/1085).
 
 ### How to add custom flags?
 `go-swagger` ships with an option to select a flag management package: `swagger generate server --flag-strategy=[go-flags|pflag]`
@@ -33,7 +33,7 @@ and provide your own, or customize template generation to generate a custom main
 
 Here's an example: [kv store example](https://github.com/go-openapi/kvstore/blob/master/cmd/kvstored/main.go#L50-L57)
 
-Originally from issue [#1036](https://github.com/go-swagger/go-swagger/issues/1036).
+Originally from issue [#1036](https://github.com/syndbg/go-swagger/issues/1036).
 
 ### How do you integrate the flag sets of go-swagger and other packages, in particular, glog?
 _Use-case_: logger
@@ -44,7 +44,7 @@ _Use-case_: logger
 
 You can configure it with any logger that exposes the signature.
 
-eg.: https://github.com/go-swagger/go-swagger/blob/master/examples/authentication/restapi/configure_auth_sample.go#L33
+eg.: https://github.com/syndbg/go-swagger/blob/master/examples/authentication/restapi/configure_auth_sample.go#L33
 
 _Use-case_: logger flags
 >Still having a problem with how and where to initialize glog so that both sets of flags are honored:
@@ -75,7 +75,7 @@ func main() {
 }
 ```
 
-Originally from issue [#762](https://github.com/go-swagger/go-swagger/issues/762).
+Originally from issue [#762](https://github.com/syndbg/go-swagger/issues/762).
 
 ### How to serve two or more swagger specs from one server?
 _Use-case_: I want a go-swagger generated server to serve 2 swagger specs that have no overlap on paths.
@@ -92,7 +92,7 @@ of both spec (with `--skip-main`).
 This allows for customization like using a different middleware stack, which in turn gives you
 the ability to serve 2 swagger specs at different paths.
 
-Originally from issue [#1005](https://github.com/go-swagger/go-swagger/issues/1005). *(comes with a sample main.go for spec composition)*.
+Originally from issue [#1005](https://github.com/syndbg/go-swagger/issues/1005). *(comes with a sample main.go for spec composition)*.
 
 ### How to access access API struct inside operator handler?
 _Use-Case_:
@@ -178,7 +178,7 @@ Wouldn't it be better to have all the handlers automatically be part of a defaul
 For instance, a new (non generated) file in the operations package could bring to life the applicative context/dependencies injection and be called from the configure_xxx.
 You may alternatively modify the generation by providing your own templates, and possibly extend the interface of the Server struct.
 
-Originally from issue [#661](https://github.com/go-swagger/go-swagger/issues/661).
+Originally from issue [#661](https://github.com/syndbg/go-swagger/issues/661).
 
 ### Use go-swagger to generate different client or servers
 _Use-Case_:
@@ -199,7 +199,7 @@ Here are some docs: http://goswagger.io/generate/templates/
 >https://github.com/vmware/vic/blob/master/Makefile#L274-L281
 
 **Hint**: you can also override templates by using the same names:
-https://github.com/go-swagger/go-swagger/blob/master/generator/templates.go#L61-L73
+https://github.com/syndbg/go-swagger/blob/master/generator/templates.go#L61-L73
 
 *Wouldn't this generate roughly the same structure of the server?*
 
@@ -211,7 +211,7 @@ https://github.com/go-swagger/go-swagger/blob/master/generator/templates.go#L61-
 
 Note: customizing templates already brings many options to the table, including generating artifacts in other languages than go.
 
-There is some documentation on the config file format here: https://github.com/go-swagger/go-swagger/blob/gen-layout-configfile/docs/use/template_layout.md
+There is some documentation on the config file format here: https://github.com/syndbg/go-swagger/blob/gen-layout-configfile/docs/use/template_layout.md
 
 Also keep in mind that `go-openapi` and `go-swagger` constitute a _toolkit_
 and provide you the *tools* to adapt to your own use case.
@@ -295,7 +295,7 @@ This should be sufficient. However:
 >I decided against this because it seemed to just add complexity for little benefit.
 >I can be persuaded to implement such a responder though, and should somebody send a PR like that I would not say no to it.
 
-Originally from issue Originally from issue [#305](https://github.com/go-swagger/go-swagger/issues/305).
+Originally from issue Originally from issue [#305](https://github.com/syndbg/go-swagger/issues/305).
 
 -------------
 

@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/go-swagger/go-swagger/cmd/swagger/commands/generate"
+	"github.com/syndbg/go-swagger/cmd/swagger/commands/generate"
 	flags "github.com/jessevdk/go-flags"
 	"github.com/stretchr/testify/assert"
 )

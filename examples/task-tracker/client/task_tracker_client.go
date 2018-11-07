@@ -11,7 +11,7 @@ import (
 
 	strfmt "github.com/go-openapi/strfmt"
 
-	"github.com/go-swagger/go-swagger/examples/task-tracker/client/tasks"
+	"github.com/syndbg/go-swagger/examples/task-tracker/client/tasks"
 )
 
 // Default task tracker HTTP client.

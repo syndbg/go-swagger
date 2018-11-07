@@ -297,7 +297,7 @@ func TestTemplates_DefinitionTargetImportPath(t *testing.T) {
 	opts := opts()
 	// Non existing target would panic: to be tested too, but in another module
 	opts.Target = "../fixtures"
-	var expected = "github.com/go-swagger/go-swagger/fixtures"
+	var expected = "github.com/syndbg/go-swagger/fixtures"
 
 	// executes template against model definitions
 	genModel, err := getModelEnvironment("../fixtures/codegen/todolist.models.yml", opts)
@@ -401,7 +401,7 @@ func TestTemplates_FuncMap(t *testing.T) {
 					assert.Contains(t, rendered.String(), "PadSurround1=-,-,-,padme,-,-,-,-,-,-,-,-\n")
 					assert.Contains(t, rendered.String(), "PadSurround2=padme,-,-,-,-,-,-,-,-,-,-,-\n")
 					assert.Contains(t, rendered.String(), "Json=[\"github.com/go-openapi/errors\",\"github.com/go-openapi/runtime\",\"github.com/go-openapi/swag\",\"github.com/go-openapi/validate\"]")
-					assert.Contains(t, rendered.String(), "\"TargetImportPath\": \"github.com/go-swagger/go-swagger/generator\"")
+					assert.Contains(t, rendered.String(), "\"TargetImportPath\": \"github.com/syndbg/go-swagger/generator\"")
 					assert.Contains(t, rendered.String(), "Snakize1=ending_in_os_name_linux_swagger\n")
 					assert.Contains(t, rendered.String(), "Snakize2=ending_in_arch_name_linux_amd64_swagger\n")
 					assert.Contains(t, rendered.String(), "Snakize3=ending_in_test_swagger\n")

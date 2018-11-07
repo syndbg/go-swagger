@@ -13,10 +13,10 @@ import (
 	middleware "github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
 
-	"github.com/go-swagger/go-swagger/examples/oauth2/restapi/operations"
-	"github.com/go-swagger/go-swagger/examples/oauth2/restapi/operations/customers"
+	"github.com/syndbg/go-swagger/examples/oauth2/restapi/operations"
+	"github.com/syndbg/go-swagger/examples/oauth2/restapi/operations/customers"
 
-	models "github.com/go-swagger/go-swagger/examples/oauth2/models"
+	models "github.com/syndbg/go-swagger/examples/oauth2/models"
 )
 
 //go:generate swagger generate server --target .. --name oauthSample --spec ../swagger.yml --principal models.Principal

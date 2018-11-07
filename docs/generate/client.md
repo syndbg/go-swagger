@@ -46,7 +46,7 @@ Help Options:
 
 ### Build a client
 
-There is an example client provided at: https://github.com/go-swagger/go-swagger/tree/master/examples/todo-list/client
+There is an example client provided at: https://github.com/syndbg/go-swagger/tree/master/examples/todo-list/client
 
 To generate a client:
 

@@ -17,7 +17,7 @@ import (
 
 	strfmt "github.com/go-openapi/strfmt"
 
-	models "github.com/go-swagger/go-swagger/examples/authentication/models"
+	models "github.com/syndbg/go-swagger/examples/authentication/models"
 )
 
 // NewCreateParams creates a new CreateParams object

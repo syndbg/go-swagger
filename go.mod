@@ -3,7 +3,7 @@ module github.com/syndbg/go-swagger
 require (
 	github.com/PuerkitoBio/purell v1.1.0
 	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
-	github.com/asaskevich/govalidator v0.0.0-20180315120708-ccb8e960c48f
+	github.com/asaskevich/govalidator v0.0.0-20180720115003-f9ffefc3facf
 	github.com/coreos/go-oidc v2.0.0+incompatible
 	github.com/davecgh/go-spew v1.1.1
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
@@ -46,7 +46,7 @@ require (
 	golang.org/x/oauth2 v0.0.0-20181017192945-9dcd33a902f4
 	golang.org/x/sys v0.0.0-20181024145615-5cd93ef61a7c
 	golang.org/x/text v0.3.0
-	golang.org/x/tools v0.0.0-20181024171208-a2dc47679d30
+	golang.org/x/tools v0.0.0-20181106213628-e21233ffa6c3
 	google.golang.org/appengine v1.2.0
 	gopkg.in/square/go-jose.v2 v2.1.9
 	gopkg.in/yaml.v2 v2.2.1
